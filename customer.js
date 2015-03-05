@@ -1,6 +1,6 @@
 
 if(Meteor.isClient){
-    merchant = DDP.connect('http://merchant.meteor.com/');
+    merchant = DDP.connect('http://localhost:3000/');
     Services=new Mongo.Collection('services',merchant);
     Appointment=new Mongo.Collection('appointment',merchant);
 
